@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    container_name: "notes"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: notesdb
+    ports:
+      - '3120:5432'
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
+    depends_on:
+      - db
