@@ -1,6 +1,6 @@
 import { Body, Controller, Post } from "@nestjs/common";
 import { AuthService } from "./auth.service";
-import type { UserCreateInput } from "node_modules/@repo/db/generated/prisma/models";
+import type { UserCreateInput } from "@repo/db";
 
 @Controller("auth")
 export default class AuthController {

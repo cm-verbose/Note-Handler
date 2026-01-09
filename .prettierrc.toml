@@ -1,7 +1,7 @@
 bracketSpacing = true
 endOfLine = "lf"
 jsxSingleQuote = false
-objectWrap = "collapse"
+objectWrap = "preserve"
 printWidth = 100
 semi = true
 singleQuote = false
