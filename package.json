@@ -12,9 +12,9 @@
     "check-types": "turbo run check-types",
     "prepare": "husky",
     "release": "standard-version",
-    "postinstall": "sh setup.sh",
     "release:minor": "standard-version --release-as minor",
-    "release:patch": "standard-version --release-as patch"
+    "release:patch": "standard-version --release-as patch",
+    "postinstall": "sh setup.sh"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.2.0",
@@ -26,6 +26,16 @@
     "standard-version": "^9.5.0",
     "turbo": "^2.6.3",
     "typescript": "5.9.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@nestjs/core",
+      "@parcel/watcher",
+      "@prisma/engines",
+      "prisma",
+      "sharp",
+      "unrs-resolver"
+    ]
   },
   "standard-version": {
     "skip": {

@@ -11,10 +11,10 @@
     "target": "ES2023",
     "sourceMap": true,
     "outDir": "./dist",
-    "paths": {
-      "@repo/db": ["../../packages/db/src/index.ts"]
-    },
     "baseUrl": ".",
+    "paths": {
+      "@repo/db/*": ["../../packages/db/src/*"]
+    }
   },
   "exclude": ["dist"]
 }
