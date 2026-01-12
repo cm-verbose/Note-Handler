@@ -13,8 +13,7 @@
     "prepare": "husky",
     "release": "standard-version",
     "release:minor": "standard-version --release-as minor",
-    "release:patch": "standard-version --release-as patch",
-    "postinstall": "sh setup.sh"
+    "release:patch": "standard-version --release-as patch"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.2.0",
@@ -32,6 +31,7 @@
       "@nestjs/core",
       "@parcel/watcher",
       "@prisma/engines",
+      "bcrypt",
       "prisma",
       "sharp",
       "unrs-resolver"

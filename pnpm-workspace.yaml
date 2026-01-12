@@ -6,6 +6,7 @@ onlyBuiltDependencies:
   - '@nestjs/core'
   - '@parcel/watcher'
   - '@prisma/engines'
+  - bcrypt
   - prisma
   - sharp
   - unrs-resolver
