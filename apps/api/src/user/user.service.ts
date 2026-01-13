@@ -1,4 +1,4 @@
-import { ConflictException, Injectable, NotFoundException } from "@nestjs/common";
+import { Injectable, NotFoundException } from "@nestjs/common";
 import { UserCreateDTO, UserUpdateDTO } from "./user.dto";
 import PrismaService from "src/prisma/prisma.service";
 import { Prisma } from "@repo/db";
@@ -80,11 +80,6 @@ export class UserService {
       switch (code) {
         case "P2025": {
           throw new NotFoundException(`Failed to update user ${id}: User not found`);
-        }
-        case "P2002": {
-          throw new ConflictException(
-            `Failed to update user with email \"${user.email}\": User already exists`,
-          );
         }
         default: {
           throw err;

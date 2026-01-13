@@ -40,7 +40,6 @@ export class UserController {
   @Get(":id")
   @UseGuards(AuthGuard("jwt"))
   async getUser(@Param("id") id: string) {
-    console.log("GET");
     return this.userService.getUser(id);
   }
 

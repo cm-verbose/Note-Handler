@@ -17,10 +17,6 @@ export class UserCreateDTO {
  * The DTO used for user update
  */
 export class UserUpdateDTO {
-  @IsEmail()
-  @IsOptional()
-  email?: string;
-
   @IsString()
   @IsOptional()
   password?: string;
