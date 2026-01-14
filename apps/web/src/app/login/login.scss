@@ -1,0 +1,39 @@
+.Login {
+  #login-prompt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    input {
+      border: 1px solid #303030;
+      background-color: transparent;
+      display: block;
+      height: 2ch;
+      color: #666666;
+      font-size: 1em;
+      height: 1.75em;
+      padding: 0 0.5em;
+      border-radius: 0.4em;
+      margin-bottom: 0.5em;
+      outline: none;
+
+      &::placeholder {
+        color: #555555;
+        user-select: none;
+      }
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      font-size: 1em;
+      height: 2.5em;
+      border-radius: 0.4em;
+      background-color: transparent;
+      border: 1px solid #303030;
+      color: #666666;
+      cursor: pointer;
+    }
+  }
+}
